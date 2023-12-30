@@ -23,7 +23,7 @@ $(function() {
 	// If the study is called with a parameter for redirection, as explained in the documentation, this value is overwritten. 
 	// To the redirect link, the following information will be appended: (1) participant number, (2) condition, (3) username, (4) description submitted by participant. These variables can be extracted from the link, saved as data, and used for linking the Social Media Ostracism paradigm to subsequent tasks and measures. See documentation for more details.
 
-    settings.defaultredirect = 'http://fppvu.qualtrics.com/SE/?SID=SV_a9u9MdnpIRuxctT';
+    settings.defaultredirect = 'https://qualtricsxm485p388sd.qualtrics.com/jfe/form/SV_4ImXnoqqpU67WRM';
 
 	
 	// **Tasklength**     
@@ -35,20 +35,20 @@ $(function() {
     // Each received "like" is indicated by the timepoint (in ms) at which the "like" will appear. To change the number of "likes" in each condition, add or remove timepoints. Make sure that every timepoint (except the first) is preceded by a single comma. 
 	// In cases with only 1 "like," a second "like" is added with time point 9999999. This "like" is added for programming purposes and is never executed, as it is outside the task time
 
-    // In condition 1, the participant will receive 1 like at the following timepoint (in ms). Default: [12000, 9999999]
-    settings.condition_1_likes = [12000, 9999999]; 
+    // In condition 0, the participant will receive 0 like at the following timepoint (in ms). Default: [12000, 9999999]
+    settings.condition_0_likes = [12000, 9999999]; 
 
-    // In condition 2, user will receive 6 likes at the following timepoints (in ms). Default: [10000, 15000,35000,80000,1320000,150000]
-    settings.condition_2_likes = [10000, 15000,35000,80000,1320000,150000];  
+    // In condition 1, user will receive 1 likes at the following timepoints (in ms). Default: [10000, 15000,35000,80000,1320000,150000]
+    settings.condition_1_likes = [10000, 15000,35000,80000,1320000,150000];  
     
-    // In condition 3, user will receive 9 likes at the following timepoints (in ms). Default: [10000, 11000,15000,35000,80000,100000,110000,150000,20000]
-    settings.condition_3_likes = [10000, 11000,15000,35000,80000,100000,110000,150000,20000]; 
+    // In condition 2, user will receive 2 likes at the following timepoints (in ms). Default: [10000, 11000,15000,35000,80000,100000,110000,150000,20000]
+    settings.condition_2_likes = [10000, 11000,15000,35000,80000,100000,110000,150000,20000]; 
 
 	// **Others' likes**     
 	// To keep the total distribution of "likes" constant across conditions, The "likes" received by one group member can be adjusted according to the participant's. By default, the other group member receives 9 "likes" in the participant-ostracism condition, 5 in the participant-inclusion condtion, and 1 in the participant-overinclusion condtion.
-	settings.condition_1_adjusted_likes = [12000, 14000,15000,35000,80000,100000,110000,150000,20000]; // 9
-	settings.condition_2_adjusted_likes = [12000, 14000,15000,35000,80000]; // 5
-	settings.condition_3_adjusted_likes = [12000, 9999999]; //1	
+	settings.condition_0_adjusted_likes = [12000, 14000,15000,35000,80000,100000,110000,150000,20000]; // 9
+	settings.condition_1_adjusted_likes = [12000, 14000,15000,35000,80000]; // 8
+	settings.condition_2_adjusted_likes = [12000, 9999999]; // 7
 	
     // Usernames by which the participant will receive "likes"
 	// If group member names are changed, these should be changed accordingly.
